@@ -1,0 +1,89 @@
+---
+title: "What are the Most Important Statistical Ideas of the Past 50 Years? "
+subtitle: "An overview by Lucy Liu, based on the paper by Andrew Gelman and Aki Vehtari"
+format:
+    revealjs:
+        slide-number: true
+        preview-links: true
+        theme: default
+---
+
+## Introduction
+-   The paper "What are the Most Important Statistical Ideas of the Past 50 Years?" by Andrew Gelman and Aki Vehtari reviews several statistical concepts that have transformed the field over the past half-century.
+-   Over the last 50 years, statistical methods have evolved significantly due to advances in computation and data analysis.
+-   The article highlights eight key ideas that transformed statistics and data science.
+-   These ideas bridged theory with computation, addressing problems that were unsolvable before.
+
+## Counterfactual causal inference 
+-   **Causal inference** refers to estimating what would have happened under different conditions that were not actually observed. It is a method used to determine cause-and-effect relationships by comparing actual outcomes with hypothetical alternatives, called "counterfactuals."
+-   Ex. Estimating how a patient would have responded if they received a different treatment than they actually did. Used in economics (e.g., treatment effects), social sciences, and epidemiology for policy decisions, clinical trials, and A/B testing in tech companies.
+
+## Bootstrapping and Simulation-Based Inference
+-   **Bootstrapping** is a resampling method used to estimate the distribution of a statistic by repeatedly sampling (with replacement) from the observed data. It helps estimate the variability of statistical estimates when theoretical methods are difficult or impossible.
+-   Ex. Computing confidence intervals for means, medians, or regression coefficients when the underlying distribution is unknown. Used in bias correction, confidence intervals, and hypothesis testing in complex datasets where assumptions of normality don't hold.
+
+## Overparameterized Models and Regularization 
+-   **Overparameterized Models** refer to models with more parameters than data points, which can lead to overfitting (fitting the noise in the data rather than the true pattern).
+-   **Regularization** is a technique used to prevent overfitting by adding a penalty to the model for having large coefficients..
+-   Ex. In regression, regularization methods like Lasso and Ridge prevent the model from becoming too complex by shrinking coefficients of less important variables. Used in neural networks, image processing, genetic data analysis, natural language processing (NLP).
+
+## Bayesian Multilevel Models 
+-   **Bayesian Multilevel Models** are statistical models that account for data that are grouped or nested within different levels. They allow the inclusion of prior knowledge in the estimation process.
+-   Ex. A study measuring student test scores, where students are nested within different schools. A multilevel model can account for differences between schools while estimating student-level effects. Used in meta-analysis, longitudinal studies, sports analytics, and hierarchical modeling in psychology.
+
+## Generic Computational Algorithms
+-   **Generic Computational Algorithms** refer to broad classes of algorithms used to fit complex models by leveraging computational power.
+-   Ex. Expectation-Maximization (EM) algorithm for handling missing data and latent variables, and Gibbs Sampling, a Markov Chain Monte Carlo (MCMC) method for Bayesian inference. Used in bayesian inference, machine learning (MCMC in Bayesian neural networks).
+
+## Adaptive Decision Analysis 
+-   **Adaptive Decision Analysis** is a statistical approach to making optimal decisions under uncertainty. It adapts to new data or circumstances as they arise, often by using Bayesian principles to update beliefs or estimates.
+-   **Bayesian Optimization** is an application that finds the best outcome by learning from past observations and making intelligent decisions about what to try next.
+-   Ex. A/B testing in marketing is a form of adaptive decision-making where one chooses the better option based on cumulative evidence. Used in AI, reinforcement learning (robotics, dynamic pricing models).
+
+## Robust Inference
+-   **Robust Inference** refers to statistical methods that provide valid results even when the assumptions of the underlying model are violated. This is essential for real-world data that often do not conform perfectly to theoretical distributions (e.g., normality).
+-   Ex. In regression analysis, robust methods are used to minimize the influence of outliers that would otherwise distort the results. Used in robust regression, robust standard errors in econometrics, and handling skewed data in biostatistics.
+
+## Exploratory Data Analysis
+-   **Exploratory Data Analysis** is an approach to analyzing data sets to summarize their main characteristics, often with visual methods, before applying formal models. It is used to uncover patterns, detect anomalies, and check assumptions.
+-   Ex. Using scatterplots, boxplots, and histograms to visualize the distribution of variables and relationships between them before building statistical models. Used in the early stages of data analysis to discover patterns, trends, and anomalies.
+
+## Commonalities Among These Ideas
+-   Many of these methods leverage modern computation for feasibility.
+-   Fields like machine learning, biology, and economics have driven statistical innovation.
+-   These methods scale well to big data, solving complex, high-dimensional problems.
+
+## Ideas lead to Methods and Workflows
+-   With the counterfactual framework causal estimands could be precisely defined and expressed in terms of unobserved data within a statistical model, connecting to ideas in survey sampling and missing data imputation.
+-   Adaptive decision analysis connects engineering problems of optimal control to the field of
+statistical learning, going far beyond classical experimental design.
+-   Exploratory data analysis moved graphical techniques and discovery into the mainstream use of these tools to better understand and diagnose problems of new complex classes of probability models that are being fit to data.
+
+## Advances in Computing
+-   Bootstrapping, overparameterized models, and machine learning metaanalysis—directly take advantage of computing speed and could not easily be imagined in a pre-computer world.
+-   Dispersion of computing resources: desktop computers allowed statisticians and computer scientists to experiment with new methods and
+then allowed practitioners to use them.
+-   Exploratory data analysis began with pencil-and-paper graphs but has completely changed with developments in computer graphics.
+
+## Big data (more data)
+-   Regularization allows users to include more predictors in a model without so much concern about overfitting.
+-   Generic computation algorithms allow users to fit larger models, which can be necessary to connect available data to underlying questions of interest.
+-   Development of statistical programming environments like S, R, reproducible research environments like Jupyter notebooks and probabilistic programming environments such as Stan, Tensorflow.
+
+## Impact on Modern Data Science
+-   These ideas address challenges posed by high-dimensional, high-volume data.
+-   Techniques like bootstrapping, regularization, and multilevel modeling are core to machine learning models today.
+-   Bayesian optimization and reinforcement learning have wide applications in AI systems.
+
+## Challenges and Future Directions
+-   Challenges: big data, messy data, and complicated questions
+-   Future Directions: high-dimensional and nonparametric modeling and computation; causal inference and decision making.
+-   Future research on validation of inferential methods, taking ideas such as unit testing from software engineering and applying them to problems of learning from noisy data.
+
+## Conclusion
+-   Expect many of the new developments to come from applied fields of science and engineering, in the same way that earlier developments in statistics came from within applied fields such as psychology and genetics.
+-   Statistics should continue to be open to ideas—general theoretical frameworks as well as specific models and methods—coming from other
+fields.
+-   As our statistical methods become more advanced, there will a continuing need to understand the
+links between data, models, and substantive theory.
+
